@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Open+Sans:400,600,700&display=swap&subset=cyrillic" />
+    <title>Document</title>
+    <!-- Google Tag Manager -->
+    <script>
+        // Your Google Tag Manager code here
+    </script>
+    <!-- End Google Tag Manager -->
+    <style>
+        body {
+            background-color: #f3f3f3;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #root {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        #loginForm {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: start;
+        }
+
+        /* #root {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 100vh;
+            padding: 0 20px; /* Add some padding for spacing */
+        /* } */
+
+        #logo {
+            text-align: start;
+            margin-bottom: -85px;
+        }
+
+        #logo img {
+            width: 150px;
+            /* Adjust the width as needed */
+            height: auto;
+            /* This maintains the aspect ratio */
+        }
+
+        #logo p {
+            font-size: 24px;
+            color: #2a4483;
+            margin-top: 10px;
+        }
+
+        #languageDropdown {
+            position: relative;
+            margin-bottom: 70px;
+            margin-left: 250px;
+        }
+
+
+        #languageSelect {
+            padding: 5px;
+            font-size: 20px;
+            width: 150px;
+            /* Adjust the width as needed */
+        }
+
+
+        #importantMessage {
+            background-color: #f3f3f3;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #loginForm h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #2a6483;
+        }
+
+        #loginForm label {
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        #loginForm input[type="text"],
+        #loginForm input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 376px;
+        }
+
+        #loginForm .forgot-password {
+            text-align: left;
+            margin-left: 115px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        #loginForm .create-account {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        #loginForm button {
+            background-color: #1393b7;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 395px;
+            height: 45px;
+            text-align: start;
+            margin-top: 30px;
+
+        }
+
+        #loginForm button:hover {
+            background-color: #1383a3;
+
+        }
+        .error {
+            color: red;
+            height: 10px;
+            font-size: 14px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="root">
+        <form id="loginForm" method="POST" action="/">
+            <div id="logo">
+            </div>
+            <div id="languageDropdown">
+                <select id="languageSelect" onchange="changeLanguage()">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="ar">العربية</option>
+                    <option value="zh">中文</option>
+                    <option value="de">Deutsch</option>
+                    <option value="ja">日本語</option>
+                    <option value="sw">Kiswahili</option>
+                    <option value="ru">Русский</option>
+                    <option value="ko">한국어</option>
+                    <option value="pt">Português</option>
+                    <option value="it">Italiano</option>
+                    <option value="tr">Türkçe</option>
+                    <option value="nl">Nederlands</option>
+                    <option value="pl">Polski</option>
+                    <option value="sv">Svenska</option>
+                    <option value="no">Norsk</option>
+                    <option value="da">Dansk</option>
+                    <option value="fi">Suomi</option>
+                    <option value="hu">Magyar</option>
+                    <option value="cs">Čeština</option>
+                    <option value="th">ไทย</option>
+                    <option value="vi">Tiếng Việt</option>
+                    <option value="ro">Română</option>
+                    <option value="el">Ελληνικά</option>
+                    <option value="he">עִבְרִית</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="id">Bahasa Indonesia</option>
+                    <option value="ms">Bahasa Melayu</option>
+                    <option value="tl">Wikang Tagalog</option>
+                    <option value="af">Afrikaans</option>
+                    <option value="sq">Shqip</option>
+                    <option value="am">አማርኛ</option>
+                    <option value="hy">Հայերեն</option>
+                    <option value="bn">বাংলা</option>
+                    <option value="bs">Bosanski</option>
+                    <option value="bg">Български</option>
+                    <option value="hr">Hrvatski</option>
+                    <option value="et">Eesti</option>
+                    <option value="fi">Suomi</option>
+                    <option value="gu">ગુજરાતી</option>
+                    <option value="ha">Hausa</option>
+                    <option value="haw">ʻŌlelo Hawaiʻi</option>
+                    <option value="is">Íslenska</option>
+                    <option value="ka">ქართული</option>
+                    <option value="km">ភាសាខ្មែរ</option>
+                    <option value="kn">ಕನ್ನಡ</option>
+                    <option value="ku">Kurdî</option>
+                    <option value="lv">Latviešu</option>
+                    <option value="lt">Lietuvių</option>
+                    <option value="lb">Lëtzebuergesch</option>
+                </select>
+            </div>
+            <h2>Log In With Us</h2>
+            <div id="importantMessage">
+            </div>
+            {% if error %}
+            <p class="error">{{ error }}</p>
+            {% endif %}
+            <label for="username">Your Phone or Email</label>
+            <input type="text" id="username" name="username" required />
+            <br />
+            <label for="password">Your Password <a href="/reset" class="forgot-password">Forgot
+                    password?</a></label>
+            <input type="password" id="password" name="password" required />
+            <button type="submit">Log In</button>
+            <div class="create-account">
+                New Here? <a href="/register">Create an Account</a>
+            </div>
+        </form>
+</body>
+
+</html>
